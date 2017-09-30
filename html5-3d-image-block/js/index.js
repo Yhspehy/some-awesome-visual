@@ -104,14 +104,14 @@ function init(){
   
   
   
-  var touchEnabled = 'ontouchstart' in window || navigator.msMaxTouchPoints;
-if (touchEnabled == true) {
-console.log("touchEnabled");
-document.addEventListener('touchmove', onTouchMove, false);
-document.addEventListener('touchstart', onTouchStart, false);
-document.addEventListener('touchend', onTouchEnd, false);
-}
- 
+	var touchEnabled = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+	if (touchEnabled == true) {
+		console.log("touchEnabled");
+		document.addEventListener('touchmove', onTouchMove, false);
+		document.addEventListener('touchstart', onTouchStart, false);
+		document.addEventListener('touchend', onTouchEnd, false);
+	}
+
 }
 
 
